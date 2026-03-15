@@ -1,0 +1,47 @@
+.marketing-page{
+background:#f8f9fa;
+}
+
+/* Hero Section */
+
+.marketing-hero{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1460925895917-afdab827c52f");
+background-size:cover;
+background-position:center;
+padding:120px 0;
+}
+
+/* Cards */
+
+.marketing-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.marketing-card:hover{
+transform:translateY(-10px);
+}
+
+/* Image */
+
+.marketing-img{
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* List */
+
+.marketing-list{
+list-style:none;
+padding:0;
+font-size:18px;
+}
+
+.marketing-list li{
+margin-bottom:12px;
+}
