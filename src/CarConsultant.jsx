@@ -3,8 +3,11 @@ import "./CarConsultant.css";
 import brezza from "./assets/car/Brezza.jpg";
 import baleno from "./assets/car/baleno.jpg";
 import vitara from "./assets/car/vitara.jpg";
+import {useNavigate} from "react-router-dom"
 
 function CarConsultant() {
+    const navigate = useNavigate();
+
   return (
     <div className="car-page">
 
@@ -16,8 +19,8 @@ function CarConsultant() {
             Find your dream car with expert guidance and trusted dealerships.
           </p>
 
-          <button className="btn btn-warning btn-lg rounded-pill mt-3">
-            Explore Cars
+          <button className="btn btn-warning btn-lg rounded-pill mt-3" onClick={() => navigate("/contact")}>
+           Contact now
           </button>
         </div>
       </div>

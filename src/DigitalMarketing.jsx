@@ -1,7 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./DigitalMarketing.css";
+import {useNavigate} from "react-router-dom"
 
 function DigitalMarketing() {
+   const navigate = useNavigate();
   return (
     <div className="marketing-page">
 
@@ -13,8 +15,8 @@ function DigitalMarketing() {
             Grow your business online with powerful marketing strategies.
           </p>
 
-          <button className="btn btn-warning btn-lg rounded-pill mt-3">
-            Get Free Strategy
+          <button className="btn btn-warning btn-lg rounded-pill mt-3" onClick={() => navigate("/contact")}>
+           Start Your Campaign
           </button>
         </div>
       </div>
@@ -33,7 +35,7 @@ function DigitalMarketing() {
               <h4>🔎 SEO Optimization</h4>
               <p>
                 Improve your Google ranking and drive organic traffic
-                with advanced SEO strategies.
+                with advanced SEO .
               </p>
             </div>
           </div>
@@ -89,7 +91,7 @@ function DigitalMarketing() {
               <li>✔ 24/7 Marketing Support</li>
             </ul>
 
-            <button className="btn btn-primary rounded-pill mt-3">
+            <button className="btn btn-primary rounded-pill mt-3" onClick={() => navigate("/contact")}>
               Start Your Campaign
             </button>
 

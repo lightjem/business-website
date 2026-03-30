@@ -1,7 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import {useNavigate} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function Home() {
+    const navigate = useNavigate();
+
   return (
     <>
      
@@ -28,11 +32,11 @@ function Home() {
               </p>
 
               <div className="mt-4">
-                <button className="btn btn-primary btn-lg me-3">
+                <button className="btn btn-primary btn-lg me-3" onClick={() => navigate("/contact")}>
                   Get a Free Quote
                 </button>
 
-                <button className="btn btn-outline-light btn-lg">
+                <button className="btn btn-outline-light btn-lg" onClick={() => navigate("/car")}>
                   Browse Cars
                 </button>
               </div>
@@ -68,7 +72,7 @@ function Home() {
                   installations and 24/7 monitoring systems.
                 </p>
 
-                <a href="#">Learn More →</a>
+                <Link className="nav-link" to="/security">Learn More →</Link>
               </div>
             </div>
 
@@ -82,9 +86,9 @@ function Home() {
                   and certified pre-owned cars at the best prices.
                 </p>
 
-                <a href="#" className="text-white">
-                  Browse Inventory →
-                </a>
+               <Link className="nav-link" to="/car"> Browse Inventory →</Link>
+                 
+            
               </div>
             </div>
 
@@ -97,7 +101,7 @@ function Home() {
                   media strategies, and high-conversion web development.
                 </p>
 
-                <a href="#">Boost Traffic →</a>
+                <Link className="nav-link" to="/marketing">Boost Traffic →</Link>
               </div>
             </div>
 
@@ -119,53 +123,13 @@ function Home() {
             marketing.
           </p>
 
-          <button className="btn btn-primary btn-lg rounded-pill mt-3">
+          <button className="btn btn-primary btn-lg rounded-pill mt-3" onClick={() => navigate("/contact")}>
             Contact Us Today
           </button>
 
         </div>
       </section>
 
-      {/* Footer */}
-      <footer
-        style={{ background: "#08142b", color: "white" }}
-        className="py-5"
-      >
-        <div className="container">
-          <div className="row">
-
-            <div className="col-md-3">
-              <h4>🛡 MultiService</h4>
-              <p>
-                Your trusted partner for modern security solutions,
-                premium auto sales, and results-driven digital marketing.
-              </p>
-            </div>
-
-            <div className="col-md-3">
-              <h5>Quick Links</h5>
-              <p>Home</p>
-              <p>About Us</p>
-              <p>Contact Us</p>
-            </div>
-
-            <div className="col-md-3">
-              <h5>Our Services</h5>
-              <p>CCTV & Security</p>
-              <p>Car Dealership</p>
-              <p>Digital Marketing</p>
-            </div>
-
-            <div className="col-md-3">
-              <h5>Contact Info</h5>
-              <p>123 Business Avenue</p>
-              <p>contact@multiservice.com</p>
-              <p>+1 555 123 4567</p>
-            </div>
-
-          </div>
-        </div>
-      </footer>
     </>
   );
 }

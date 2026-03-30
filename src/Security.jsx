@@ -1,8 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CameraVideoFill, LockFill, Display } from "react-bootstrap-icons";
 import "./Security.css";
+import {useNavigate} from "react-router-dom"
 
 function Security() {
+   const navigate = useNavigate();
   return (
     <section className="security-section">
 
@@ -89,7 +91,7 @@ function Security() {
               <li>✔ 24/7 Technical Support</li>
             </ul>
 
-            <button className="btn btn-primary btn-lg rounded-pill mt-3">
+            <button className="btn btn-primary btn-lg rounded-pill mt-3" onClick={() => navigate("/contact")}>
               Get Free Consultation
             </button>
 

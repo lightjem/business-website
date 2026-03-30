@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {useNavigate} from "react-router-dom"
 
 const Nav = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* Navbar */}
@@ -40,9 +43,11 @@ const Nav = () => {
                 <Link className="nav-link" to="/marketing">Marketing</Link>
               </li>
 
+              
+
             </ul>
 
-            <button className="btn btn-primary rounded-pill ms-3">
+            <button className="btn btn-primary rounded-pill ms-3" onClick={() => navigate("/contact")}>
               Get Quote
             </button>
 
