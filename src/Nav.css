@@ -1,0 +1,42 @@
+/* BRAND TEXT */
+.brand-text {
+  font-size: 1.3rem;
+  color: #0b1a35;
+}
+
+/* NAV LINKS */
+.nav-link {
+  font-weight: 500;
+  color: #333 !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* ACTIVE LINK */
+.active-link {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+
+/* BUTTON */
+.nav-btn {
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
+
+/* MOBILE MENU */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}

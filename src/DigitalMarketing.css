@@ -1,47 +1,58 @@
-.marketing-page{
-background:#f8f9fa;
+/* HERO TEXT */
+.hero-title {
+  font-size: 2rem;
 }
 
-/* Hero Section */
-
-.marketing-hero{
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url("https://images.unsplash.com/photo-1460925895917-afdab827c52f");
-background-size:cover;
-background-position:center;
-padding:120px 0;
+.hero-text {
+  max-width: 700px;
 }
 
-/* Cards */
-
-.marketing-card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-text-align:center;
-transition:0.3s;
+/* RESPONSIVE TEXT */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
 }
 
-.marketing-card:hover{
-transform:translateY(-10px);
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
 }
 
-/* Image */
-
-.marketing-img{
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+/* SECTION TITLE */
+.section-title {
+  font-size: 1.8rem;
 }
 
-/* List */
-
-.marketing-list{
-list-style:none;
-padding:0;
-font-size:18px;
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.3rem;
+  }
 }
 
-.marketing-list li{
-margin-bottom:12px;
+/* CARDS */
+.marketing-card {
+  border-radius: 16px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.marketing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* LIST */
+.marketing-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* MOBILE SPACING */
+@media (max-width: 576px) {
+  .marketing-hero {
+    padding: 20px;
+    text-align: center;
+  }
 }

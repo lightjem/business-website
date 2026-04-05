@@ -1,105 +1,130 @@
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./DigitalMarketing.css";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import heroImage from "./assets/marketing-slide.png";
 
 function DigitalMarketing() {
-   const navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
     <div className="marketing-page">
 
-      {/* Hero Section */}
-      <div className="marketing-hero text-center text-white">
-        <div className="container">
-          <h1 className="display-4 fw-bold">Digital Marketing Solutions</h1>
-          <p className="lead">
-            Grow your business online with powerful marketing strategies.
+      {/* HERO */}
+      <section
+        className="marketing-hero d-flex align-items-center text-white"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "100vh",
+        }}
+      >
+        <div className="container text-center">
+          <h1 className="fw-bold hero-title mb-3">
+            Digital Marketing Solutions
+          </h1>
+
+          <p className="lead hero-text mx-auto">
+            Grow your business online with powerful, result-driven strategies
+            that deliver real growth.
           </p>
 
-          <button className="btn btn-warning btn-lg rounded-pill mt-3" onClick={() => navigate("/contact")}>
-           Start Your Campaign
+          <button
+            className="btn btn-warning btn-lg rounded-pill px-4 mt-3 shadow"
+            onClick={() => navigate("/contact")}
+          >
+            🚀 Start Your Campaign
           </button>
         </div>
-      </div>
+      </section>
 
+      {/* SERVICES */}
+      <section className="py-5 bg-light">
+        <div className="container text-center">
 
-      {/* Services Section */}
+          <h2 className="fw-bold mb-5 section-title">
+            Our Marketing Services
+          </h2>
 
-      <div className="container py-5">
+          <div className="row g-4">
 
-        <h2 className="text-center mb-5">Our Marketing Services</h2>
-
-        <div className="row g-4">
-
-          <div className="col-md-4">
-            <div className="marketing-card">
-              <h4>🔎 SEO Optimization</h4>
-              <p>
-                Improve your Google ranking and drive organic traffic
-                with advanced SEO .
-              </p>
+            <div className="col-12 col-md-6 col-lg-4">
+              <div className="marketing-card h-100 p-4 shadow-sm">
+                <h5>🔎 SEO Optimization</h5>
+                <p>
+                  Improve search rankings and drive organic traffic with
+                  advanced SEO strategies.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div className="marketing-card">
-              <h4>📱 Social Media Marketing</h4>
-              <p>
-                Build brand awareness and connect with customers
-                across all social platforms.
-              </p>
+            <div className="col-12 col-md-6 col-lg-4">
+              <div className="marketing-card h-100 p-4 shadow-sm">
+                <h5>📱 Social Media Marketing</h5>
+                <p>
+                  Build brand awareness and connect with your audience across
+                  all platforms.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div className="marketing-card">
-              <h4>💰 Google Ads</h4>
-              <p>
-                Run targeted ad campaigns that convert visitors
-                into paying customers.
-              </p>
+            <div className="col-12 col-md-6 col-lg-4 mx-auto">
+              <div className="marketing-card h-100 p-4 shadow-sm">
+                <h5>💰 Google Ads</h5>
+                <p>
+                  Run high-converting campaigns that turn visitors into
+                  customers.
+                </p>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
+      </section>
 
-      </div>
+      {/* WHY CHOOSE US */}
+      <section className="py-5">
+        <div className="container">
 
+          <div className="row align-items-center g-5">
 
-      {/* Why Choose Us */}
+            {/* IMAGE */}
+            <div className="col-12 col-lg-6 text-center">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+                className="img-fluid rounded-4 shadow-lg"
+                alt="marketing"
+              />
+            </div>
 
-      <div className="container pb-5">
+            {/* CONTENT */}
+            <div className="col-12 col-lg-6 text-center text-lg-start">
 
-        <div className="row align-items-center">
+              <h2 className="fw-bold mb-3 section-title">
+                Why Choose Our Experts?
+              </h2>
 
-          <div className="col-md-6">
-            <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
-              className="img-fluid marketing-img"
-              alt="marketing"
-            />
+              <ul className="list-unstyled marketing-list mt-3">
+                <li>✔ Data-Driven Strategies</li>
+                <li>✔ Proven SEO Results</li>
+                <li>✔ Creative Campaigns</li>
+                <li>✔ ROI-Focused Ads</li>
+                <li>✔ 24/7 Support</li>
+              </ul>
+
+              <button
+                className="btn btn-primary rounded-pill px-4 mt-3"
+                onClick={() => navigate("/contact")}
+              >
+                Get Started
+              </button>
+
+            </div>
+
           </div>
-
-          <div className="col-md-6">
-
-            <h2>Why Choose Our Marketing Experts?</h2>
-
-            <ul className="marketing-list">
-              <li>✔ Data-Driven Marketing Strategies</li>
-              <li>✔ Proven SEO Results</li>
-              <li>✔ Creative Social Media Campaigns</li>
-              <li>✔ ROI Focused Advertising</li>
-              <li>✔ 24/7 Marketing Support</li>
-            </ul>
-
-            <button className="btn btn-primary rounded-pill mt-3" onClick={() => navigate("/contact")}>
-              Start Your Campaign
-            </button>
-
-          </div>
-
         </div>
-
-      </div>
+      </section>
 
     </div>
   );
