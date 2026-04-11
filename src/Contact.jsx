@@ -45,8 +45,8 @@ export default function Contact() {
                 Feel free to reach out for any inquiries or business collaboration.
               </p>
 
-              <p> 702551359</p>
-              <p> contact@multiservice.com</p>
+              <p> 7293513859</p>
+              <p> jadeert28@gmail.com</p>
               <p>palakkad, Kerala, India</p>
             </div>
           </div>

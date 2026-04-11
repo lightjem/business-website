@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import logo from "./assets/log.png";
 
 export default function Footer() {
   return (
@@ -14,7 +15,12 @@ export default function Footer() {
 
           {/* BRAND */}
           <div className="col-12 col-md-6 col-lg-3">
-            <h4 className="fw-bold">🛡 MultiService</h4>
+            <h4 className="fw-bold"> <img
+                        src={logo}
+                        alt="Luxara Logo"
+                        className="img-fluid"
+                        style={{ maxHeight: "40px" }}
+                      /> MultiService</h4>
             <p className="small mt-3">
               Your trusted partner for modern security solutions,
               premium auto sales, and results-driven digital marketing.
@@ -63,13 +69,13 @@ export default function Footer() {
 
             <p className="small mb-2">
               <a href="mailto:jamshedjamshedrahman@gmail.com" className="footer-link">
-                jamshedjamshedrahman@gmail.com
+                jadeert28@gmail.com
               </a>
             </p>
 
             <p className="small">
-              <a href="tel:+917025513859" className="footer-link">
-                +91 70255 13859
+              <a href="tel:+917293513857" className="footer-link">
+                +91 7293513857
               </a>
             </p>
           </div>

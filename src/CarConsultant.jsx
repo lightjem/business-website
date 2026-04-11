@@ -14,7 +14,7 @@ function CarConsultant() {
       {/* Hero Section */}
       <div className="car-hero text-center text-white">
         <div className="container">
-          <h1 className="display-4 fw-bold">Premium Car Consulting</h1>
+          <h1 className="display-4 fw-bold">Smart Solutions for Premium & Budget Cars and Two-Wheelers</h1>
           <p className="lead">
             Find your dream car with expert guidance and trusted dealerships.
           </p>
@@ -89,6 +89,7 @@ function CarConsultant() {
         <img src={baleno} className="img-fluid" alt="Baleno"/>
         <h5>Maruti Suzuki Baleno</h5>
         <p>₹6,66,000</p>
+        <br />
       </div>
     </div>
 
@@ -99,9 +100,15 @@ function CarConsultant() {
         <p>₹10,99,000</p>
       </div>
     </div>
+   
 
   </div>
 
+</div>
+<div class="container mt-3">
+  <div class="alert alert-info text-center small shadow-sm" role="alert">
+    Car prices may vary across variants and months. The prices displayed are valid as of March 26, 2026.
+  </div>
 </div>
 
     </div>
