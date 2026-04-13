@@ -63,7 +63,7 @@ export default function Footer() {
             <h5 className="fw-semibold mb-3">Contact Info</h5>
 
             <p className="small mb-2">
-              Luxara, Vanithavalam <br />
+              Luxara, Vandithavalam <br />
               Palakkad, Kerala
             </p>
 
